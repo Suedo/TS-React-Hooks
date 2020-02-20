@@ -1,0 +1,7 @@
+UseState:
+
+1. The UseState hook lets you add state to functional components
+2. In classes, state is always an object, with hooks, state doesnt need to be an object
+3. The UseState hook returns an array with two elements: the current value of the state, and the setter method
+4. If state value depends on previous value, pass a lambda to the state's setter method
+5. When deaing with object or array, always spread it in the setter before using it
