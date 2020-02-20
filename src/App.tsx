@@ -4,13 +4,14 @@ import './App.css';
 // import HookName from './components/useState/HookName'
 // import HookArray from './components/useState/HookArray'
 // import HookMouse from './components/useEffect/HookMouse'
-import MouseContainer from './components/useEffect/MouseContainer'
+// import MouseContainer from './components/useEffect/MouseContainer'
+import IntervalCounter from './components/useEffect/IntervalCounter'
 
 const App: React.FC = () => {
   return (
     <div className="App">
       Hello!
-      <MouseContainer />
+      <IntervalCounter />
     </div>
   )
 }
