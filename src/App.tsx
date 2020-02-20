@@ -1,13 +1,13 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import HookCounterv2 from './components/HookCounterv2'
+import HookName from './components/HookName'
 
 const App: React.FC = () => {
   return (
     <div className="App">
       Hello!
-      <HookCounterv2></HookCounterv2>
+      <HookName></HookName>
     </div>
   )
 }
