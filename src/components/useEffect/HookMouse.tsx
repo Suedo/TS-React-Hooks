@@ -11,8 +11,14 @@ const HookMouse = () => {
 
   useEffect(() => {
     console.log('UseEffect: Updating Mouse Co-ords');
-    window.addEventListener('mousemove', logMousePosition)    
-  }, []) // doesnt depend on any other prop/state, so dont call on re-render
+    window.addEventListener('mousemove', logMousePosition)  
+    
+    // the function returned by useEffect is triggered on unmount for cleanup
+    return () => {
+      console.log('Unmounting event listener')
+      window.removeEventListener('mousemove', logMousePosition)
+    }
+  }, []) // [] means: doesnt depend on any other prop/state, so dont call on re-render
   // thus, useEffect is only called once, and the mouse handler attached.
 
   return (
