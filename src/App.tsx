@@ -5,13 +5,15 @@ import './App.css';
 // import HookArray from './components/useState/HookArray'
 // import HookMouse from './components/useEffect/HookMouse'
 // import MouseContainer from './components/useEffect/MouseContainer'
-import IntervalCounter from './components/useEffect/IntervalCounter'
+// import IntervalCounter from './components/useEffect/IntervalCounter'
+import DataFetching from './components/useEffect/DataFetching'
+
 
 const App: React.FC = () => {
   return (
     <div className="App">
       Hello!
-      <IntervalCounter />
+      <DataFetching />
     </div>
   )
 }
