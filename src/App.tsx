@@ -6,14 +6,14 @@ import './App.css';
 // import HookMouse from './components/useEffect/HookMouse'
 // import MouseContainer from './components/useEffect/MouseContainer'
 // import IntervalCounter from './components/useEffect/IntervalCounter'
-import DataFetching from './components/useEffect/DataFetching'
+import DataFetchingV2 from './components/useEffect/DataFetchingV2'
 
 
 const App: React.FC = () => {
   return (
     <div className="App">
       Hello!
-      <DataFetching />
+      <DataFetchingV2 />
     </div>
   )
 }
