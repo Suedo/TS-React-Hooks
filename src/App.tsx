@@ -8,18 +8,29 @@ import "./App.css";
 // import IntervalCounter from './components/useEffect/IntervalCounter'
 import DataFetchingV2 from "./components/useEffect/DataFetchingV2";
 import Parent from "./components/useContext/Parent";
+import { CitiesHeader, CitiesList, CitiesForm } from "./MobX/components/city";
+import StoreProvider from "./MobX/Context";
 
 export const UserContext = React.createContext<string>("");
 
 const App: React.FC = () => {
   return (
-    <div className="App">
-      Hello!
-      <DataFetchingV2 />
-      <UserContext.Provider value={"Somjit"}>
-        <Parent />
-      </UserContext.Provider>
-    </div>
+    // <div className="App">
+    //   Hello!
+    //   <DataFetchingV2 />
+    //   <UserContext.Provider value={"Somjit"}>
+    //     <Parent />
+    //   </UserContext.Provider>
+    // </div>
+
+    <StoreProvider>
+      <div className="App">
+        <header className="App-Header" />
+        <CitiesHeader />
+        <CitiesList />
+        <CitiesForm />
+      </div>
+    </StoreProvider>
   );
 };
 export default App;
