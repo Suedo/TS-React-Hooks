@@ -26,7 +26,7 @@ export const CitiesList = () => {
   if (!store) throw Error("Store shouldn't be null");
 
   return (
-    <Observer>{ () => <CityView cities={store.Cities} /> }</Observer>
+    <Observer>{ () => <CityView cities={store.Cities.slice()} /> }</Observer>
   )
 };
 
